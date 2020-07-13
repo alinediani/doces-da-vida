@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	 
+ 
+	
+	
+
+   <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	   
+    </head>
+
+    <body>
+	
+	<style>
+	html {
+		
+		font-family: Tahoma; 
+		font-size: 40px;
+		  background-color: #0d47a1;
+		  margin-left: 20px;
+		  
+		  
+		  
+}
+	</style>
+	
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	 
+	
+		
+				<div align="center"> <img width = "385px" src="imagens/logo.png"> </div>
+				
+				
+				
+<div class="header left  red-text text-darken-2"> 
+				
+		Selecione o Refrigerante<br>
+		
+		<div align="left">
+			<form action="pedido4.php" name ="refri" method="post" >
+				<label>
+					<input name="rbrefri" type="radio" value="coca" checked />
+						<span>Coca Cola</span>
+				</label><br>
+				<label>
+					<input name="rbrefri" type="radio" value="guarana" />
+						<span>Guaran&aacute;</span>
+				</label><hr>Qual Sabor do Brigadeiro?<br>
+				<label>
+					<input name="rbbrigadeiro" type="radio" value="capuccino" checked/>
+						<span>Cappuccino</span>
+				</label><br>
+				<label>
+					<input name="rbbrigadeiro" type="radio" value="pacoca" />
+						<span>Pa&ccedil;oca</span>
+				</label>
+				
+		</div>
+				
+				<div align="center">
+					<p>	
+						<button class="btn btn-primary light-blue accent-4" type="submit" name="action" style="width: 400px; height: 100px; font-size: 30px; ">Continuar</button>
+						</p>
+				</div></form>
+
+
+
+
+
+
+			
+</div>		
+				
+ 	 	
+	 
+	 
+	  	
+	  
+	 <script>
+			document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('select');
+			var instances = M.FormSelect.init(elems, options);
+			});
+
+			// Or with jQuery
+
+			$(document).ready(function(){
+				$('select').formSelect();
+			});
+  	</script>
+	
+	  
+    </body>
+  </html>
